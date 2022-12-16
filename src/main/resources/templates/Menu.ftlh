@@ -1,6 +1,4 @@
-
-
-<!DOCTYPE HTML>
+iteration need to be fixed<!DOCTYPE HTML>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -12,13 +10,12 @@
     <button type="submit">Enter</button>
 </form></div>
 <div> Меню </div>
-
-{{#message }}
-    <div>
-<b> {{id}} </b>
-    <span> {{name}} </span>
-<i>{{discription}}</i></div>
-{{/message }}
-
+<p>
+        <#list message  as messages>
+           <b>${messages.name}</b>
+            <#else >
+            No
+        </#list>
+</p>
 </body>
 </html>
