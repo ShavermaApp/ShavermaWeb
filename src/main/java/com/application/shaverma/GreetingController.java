@@ -32,7 +32,6 @@ public class GreetingController {
     // RequestParam забирает данные из формы при POST запросе и из URl при GET запросе
     @GetMapping("/")
     public String main(Map<String, Object> model) {
-        model.put("some", "Welcome!");
         return "Main";
     }
 }
